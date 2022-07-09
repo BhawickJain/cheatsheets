@@ -2,16 +2,23 @@
 
 ## typical patterm with Aliases
 
-```
-g s # get status
+```bash
+g s                           # get status
 g a .                         # add all items (usually one)
 g c "{message}"               # give commit with message
 g pp                          # pull and push into respository
 ```
 
-## managing branches
+## reading logs
+```bash
+git log
+git log --oneline             # useful for | grep
+git log --graph               # fancy visual
 
 ```
+## managing branches
+
+```bash
 git branch [name]
 git branch -a                 # list all branches
 git branch                    # list all branches
@@ -22,21 +29,21 @@ git checkout -b [branch-name] # create and switch to new branch
 ```
 
 __deleting__
-```
+```bash
 git fetch —prune              # remove dead branches according to remote
 git branch -D [name]
 ```
 
 ## managing changes
 
-```
+```bash
 git restore [filename]        # restore file to last indexed commit
 
 ```
 
 ## git config
 
-```
+```bash
 git config --global -l
 git config --global user.email "user@email.com"
 git config --global user.name "name"
