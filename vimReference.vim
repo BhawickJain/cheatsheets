@@ -1,7 +1,14 @@
-vim 
+# vim
+
+```vim
+vim --version
 
 f,[char] takes cursor to the next [char]
 shift+f,[char], takes to the last [char]
+
+# highlight column number
+set colorcolum=72
+set colorcolum& #unset
 
 fold
 
@@ -60,3 +67,4 @@ shift+f [char]
 
 # go to previous word currently under cursor
 #
+```
