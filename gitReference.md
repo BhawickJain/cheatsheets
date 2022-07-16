@@ -38,7 +38,8 @@ git branch -D [name]
 
 ```bash
 git restore [filename]        # restore file to last indexed commit
-
+git rebase [ahead-branch]     # merge ahead-branch commits
+                              # into current branch
 ```
 
 ## git config
