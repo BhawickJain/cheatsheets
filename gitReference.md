@@ -116,7 +116,7 @@ Ensure [git credential manager](https://docs.microsoft.com/en-us/azure/devops/us
 git config --global -l
 
 git config --global user.name [name surname]
-git config --glibal user.email [email]
+git config --global user.email [email]
 
 # edit in editor
 git config --global -e
