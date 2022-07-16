@@ -85,6 +85,9 @@ console.log(square)
 
 // for each does not return anything
 listOfNumbers.foreach((a) => console.log(a))
+
+// if any item holds condition true
+listOfNumers.some((el) => el % 2 === 0)
 ```
 
 ## if statements
