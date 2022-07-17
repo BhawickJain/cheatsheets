@@ -1,6 +1,5 @@
 # vim
 
-```vim
 vim --version
 
 f,[char] takes cursor to the next [char]
@@ -10,13 +9,15 @@ shift+f,[char], takes to the last [char]
 set colorcolum=72
 set colorcolum& #unset
 
-fold
+# fold
 
-zM fold everything recursively
-zO fold open everything recursively
-zA fold entire block currenty in
+zM # fold everything recursively
+zO # fold open everything recursively
+zA # fold entire block currenty in
 
-substitute
+# substitute
+
+:[range]s/[regex-match]/[substitute]/[options]
 
 # subsitute globally along line
 :s/foo/bar/g
@@ -31,7 +32,7 @@ substitute
 :5,$s/foo/bar/g
 
 # substite across the files
-:$s/food/bar/g
+:%s/food/bar/g
 
 # substitute across line but ask confirmation for each
 :s/foo/bar/gc
@@ -62,9 +63,18 @@ shift+f [char]
 # after you used f[char]
 ;
 
-# go to next word currently under cursor
+# search to next word currently under cursor
 *
 
-# go to previous word currently under cursor
+# search to previous word currently under cursor
 #
-```
+
+# change case
+
+# in visual mode
+# select text
+U # for all UPPERCASE
+u # for all lowercase
+
+# in normal and visual mode
+~ # to switch case of character
