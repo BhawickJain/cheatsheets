@@ -1,0 +1,56 @@
+# Glossary of Terms
+
+property : a token sibling to another token. e.g. `log` is a property of `console`
+property access : properties are accessed with [dot] `.`
+array access : array is acessed via `[i]`, where i is a integer index.
+block : lines that share the same indentation or parent token
+expression : a statement that needs to be evaluated into a literal
+literal : a value representable in a primitive data type.
+evaluate : is to compute an expression into a literal value
+string literal : a value of string type, e.g. "a word"
+method : a `call`able property
+function call : indicated by parentheses `(...)`, invokes a function with an argument list.
+argument : literal values passed to a function during invocation.
+argument list : literal values delimited by ',', e.g. 1, 2 in add(1, 2)
+HTML element : `<div ...>...</div>` including attributes and literal inside
+HTML tag : In `<div ...>...</div>`, a `div` tag is used
+HTML attribute : In `<div class="note" ...>...</div>`, `class` is an attribute
+DOM node property : attribute reflecting an HTML element, returns current value
+node : a DOM object node, created when an HTML element is parsed
+DOM : Document Object Model, tree of nodes, output of a parsed HTML document
+for of loop : `for (let el of elements) {...}`
+reference : a pointer to a location
+object reference : a reference to an object, typically in memory
+object literal : literal representation of object, e.g. JSON
+react component function : PascalCased function that returns a single JSX.Element
+JSX : extends JS and TS to manipulate DOM nodes like HTML elements
+JSX fragment : `<>...</>` or `<>...<>` to group into single JSX.Element without `div`
+string interpolation expression : string literal with inline variable substitutions
+global execution function :
+local execution function :
+variable environment :
+call stack : a stack to track function calls
+stack : a data structure where elements are `push`ed in and `pop`ped out. FIFO-style.
+FIFO : first-in-first-out
+token : a human readable word used in a computer language to refer to things
+array variable : a token which holds a reference to an array object
+array : an object in which elements are only accessed by an index
+enum : an object where properties can be accessed via an index
+object : a data structure of key of string literals and value of a literal or reference.
+snake-case : used for `class` html attribute names
+camelCase : used for variable and standard function names
+PascalCase : used for custom types, interfaces, react component functions names
+lowercase : intrinsc JSX.Element and HTML element tags.
+function invocation : see function call
+css box model : margin-outline-border-padding-content
+css utility class : assign a single CSS property by a class attribute value in an element
+dynamic typing : type can be reassigned during run-time
+static typing : type of a variable is immutable at all times, including run-time
+structural typing : types are matches and represented by their structure of primitive type
+strong typing : type coercion not allowed when expect type does not match literal's type
+weak typing : type coercion allowed if types do not match during invokation or assignment
+duck typing : object is considered valid if property access is valid, regardless of its type
+type inference : by means a language evaluates the type of an expression
+union : properties that are common
+garbage collector : a process that frees memory marked as no longer needed
+
