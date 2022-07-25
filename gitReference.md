@@ -3,51 +3,52 @@
 ## typical patterm with Aliases
 
 ```bash
-g s                           # get status
-g a .                         # add all items (usually one)
-g c "{message}"               # give commit with message
-g pp                          # pull and push into respository
+g s                               # get status
+g a .                             # add all items (usually one)
+g c "{message}"                   # give commit with message
+g pp                              # pull and push into respository
 ```
 
 ## reading logs
 ```bash
 git log
-git log --oneline             # useful for | grep
-git log --graph               # fancy visual
+git log --oneline                 # useful for | grep
+git log --graph                   # fancy visual
 git log --graph --color | less -r # less with color output
 ```
 
 ## differences
 
 ```
-git diff HEAD~1 HEAD          # compare 1 previous with current HEAD
-git diff [from-#] [after-#]   # commit comparison
+git diff HEAD~1 HEAD              # compare 1 previous with current HEAD
+git diff [from-#] [after-#]       # commit comparison
+git diff [branch-1] [branch-2]    # compare branches
 ```
 
 ## managing branches
 
 ```bash
 git branch [name]
-git branch -a                 # list all branches
-git branch                    # list all branches
-git push -u origin [name]     # push branch to repo
+git branch -a                     # list all branches
+git branch                        # list all branches
+git push -u origin [name]         # push branch to repo
 git switch [name]
 git switch -c [name]
-git checkout -b [branch-name] # create and switch to new branch
+git checkout -b [branch-name]     # create and switch to new branch
 ```
 
 __deleting__
 ```bash
-git fetch —prune              # remove dead branches according to remote
+git fetch —prune                  # remove dead branches according to remote
 git branch -D [name]
 ```
 
 ## managing changes
 
 ```bash
-git restore [filename]        # restore file to last indexed commit
-git rebase [ahead-branch]     # merge ahead-branch commits
-                              # into current branch
+git restore [filename]            # restore file to last indexed commit
+git rebase [ahead-branch]         # merge ahead-branch commits
+                                  # into current branch
 ```
 
 ## git config
