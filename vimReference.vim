@@ -78,3 +78,15 @@ u # for all lowercase
 
 # in normal and visual mode
 ~ # to switch case of character
+
+# Spell Check
+```vim
+]s # next spelling mistake
+[s # previous spelling mistake
+z= # suggest correct spelling
+zg # set as good spelling
+zw # set as wrong spelling
+
+.vimrc
+set spell spelllang=en_us # language in .vimrc
+```
