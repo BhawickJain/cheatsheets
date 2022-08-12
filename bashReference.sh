@@ -2,7 +2,8 @@
 # count number of files
 ls * | wc -l
 
-ls -1laho # one line, mark directories, human readable
+ls -1laho # one line, human readable
+ls -lap1 # one line, mark directories
 # copy
 echo 'hello' | pbcopy
 # see also pbpaste
