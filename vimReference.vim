@@ -12,8 +12,11 @@ set colorcolum& #unset
 # fold
 
 zM # fold everything recursively
+zm # fold everything recursively
 zO # fold open everything recursively
+zo # fold open current block
 zA # fold entire block currenty in
+za # fold toggle block
 
 # substitute
 
