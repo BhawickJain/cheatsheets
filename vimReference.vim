@@ -66,11 +66,19 @@ shift+f [char]
 # after you used f[char]
 ;
 
+# search
+/\c[regex-pattern]  # case insensitive search
+/\C[regex-pattern]  # case sensitive search
+:set ic             # set search case insensitive
+:set noic           # set search case sensitive
+:set ic!            # toggle case-sensitive search
+?                   # trigger search
+/                   # trigger search
+
 # search to next word currently under cursor
 *
 
 # search to previous word currently under cursor
-#
 
 # change case
 
