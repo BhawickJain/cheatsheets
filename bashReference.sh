@@ -43,4 +43,8 @@ shasum -c check.txt                    # check if checksum matches file
 
 man awk
 ## diplay tasks from every file in a tabular format
-grep ' : ' *.md | awk 'BEGIN{FS=:; OFS=%%%}{print , :  }' | column -s '%%%' -t | less
+grep ' : ' *.md | awk 'BEGIN{FS=":"; OFS="%%%"}{print $1, ": " $3}' | column -s '%%%' -t
+
+
+echo "a very long string" | less -S   # unwrap long lines
+                                      # use left-right arrow keys to pan
