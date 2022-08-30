@@ -40,3 +40,7 @@ shasum -c check.txt                    # check if checksum matches file
 ## create a check.txt file
 ## place author's checksum for the file
 ## run shasum -c check.txt
+
+man awk
+## diplay tasks from every file in a tabular format
+grep ' : ' *.md | awk 'BEGIN{FS=:; OFS=%%%}{print ,}' | column -s '%%%' -t | less
