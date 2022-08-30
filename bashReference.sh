@@ -43,4 +43,4 @@ shasum -c check.txt                    # check if checksum matches file
 
 man awk
 ## diplay tasks from every file in a tabular format
-grep ' : ' *.md | awk 'BEGIN{FS=:; OFS=%%%}{print ,}' | column -s '%%%' -t | less
+grep ' : ' *.md | awk 'BEGIN{FS=:; OFS=%%%}{print , :  }' | column -s '%%%' -t | less
