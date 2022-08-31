@@ -25,6 +25,23 @@ git diff [from-#] [after-#]       # commit comparison
 git diff [branch-1] [branch-2]    # compare branches
 ```
 
+## managing remotes
+
+```bash
+git remote -v                     # show all remotes
+```
+
+### remove a remote
+```bash
+git remote remove origin          # remove the origin remote
+```
+
+### add a remote
+```bash
+git remote add origin [url]       # create origin with repo url
+git git push -u origin master
+```
+
 ## managing branches
 
 ```bash
