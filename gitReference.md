@@ -20,6 +20,7 @@ git log --graph --color | less -r # less with color output
 ## differences
 
 ```
+git diff HEAD~                    # compare HEAD 1 previous (implicit)
 git diff HEAD~1 HEAD              # compare 1 previous with current HEAD
 git diff [from-#] [after-#]       # commit comparison
 git diff [branch-1] [branch-2]    # compare branches
