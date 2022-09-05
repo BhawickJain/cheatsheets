@@ -48,3 +48,6 @@ grep ' : ' *.md | awk 'BEGIN{FS=":"; OFS="%%%"}{print $1, ": " $3}' | column -s 
 
 echo "a very long string" | less -S   # unwrap long lines
                                       # use left-right arrow keys to pan
+
+# curl
+curl https://raw.githubusercontent.com/vercel/next-learn/master/basics/basics-final/public/images/profile.jpg -o profile.jpg # download a file and name
