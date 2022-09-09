@@ -41,6 +41,7 @@ shasum -c check.txt                    # check if checksum matches file
 ## place author's checksum for the file
 ## run shasum -c check.txt
 
+... | sort -r                         # sort in reverse order
 man awk
 ## diplay tasks from every file in a tabular format
 grep ' : ' *.md | awk 'BEGIN{FS=":"; OFS="%%%"}{print $1, ": " $3}' | column -s '%%%' -t
