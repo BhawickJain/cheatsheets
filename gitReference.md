@@ -75,6 +75,7 @@ git rebase [ahead-branch]         # merge ahead-branch commits
 git config --global -l
 git config --global user.email "user@email.com"
 git config --global user.name "name"
+git config --global core.editor vi --wait
 ```
 
 Your git config usually lies in the user root `~` under file name `.gitconfig` 
