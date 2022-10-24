@@ -63,6 +63,26 @@ git fetch —prune                  # remove dead branches according to remote
 git branch -D [name]
 ```
 
+## gitignore
+
+[credits](https://stackoverflow.com/questions/987142/make-gitignore-ignore-everything-except-a-few-files)
+```bash
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!script.pl
+!template.latex
+# etc...
+
+# ...even if they are in subdirectories
+!*/
+
+# if the files to be tracked are in subdirectories
+!*/a/b/file1.txt
+!*/a/b/c/*
+```
 ## managing changes
 
 ```bash
