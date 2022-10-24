@@ -30,6 +30,8 @@ git diff [branch-1] [branch-2]    # compare branches
 
 ```bash
 git remote -v                     # show all remotes
+git clone origin-url .            # clone contents into current folder
+                                  # folder must completely empty
 ```
 
 ### remove a remote
