@@ -51,4 +51,7 @@ echo "a very long string" | less -S   # unwrap long lines
                                       # use left-right arrow keys to pan
 
 # curl
+## download file with custom file name
 curl https://raw.githubusercontent.com/vercel/next-learn/master/basics/basics-final/public/images/profile.jpg -o profile.jpg # download a file and name
+## download with original file name
+curl -O https://raw.githubusercontent.com/vercel/next-learn/master/basics/basics-final/public/images/profile.jpg
