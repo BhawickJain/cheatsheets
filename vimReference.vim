@@ -101,3 +101,12 @@ zw # set as wrong spelling
 .vimrc
 set spell spelllang=en_us # language in .vimrc
 ```
+
+# Plug
+```vim
+" with vim open
+:PlugInstall
+
+" delete / comment out plugs in vimrc or init.vim
+:PlugClean
+```
