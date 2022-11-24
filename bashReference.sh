@@ -55,3 +55,16 @@ echo "a very long string" | less -S   # unwrap long lines
 curl https://raw.githubusercontent.com/vercel/next-learn/master/basics/basics-final/public/images/profile.jpg -o profile.jpg # download a file and name
 ## download with original file name
 curl -O https://raw.githubusercontent.com/vercel/next-learn/master/basics/basics-final/public/images/profile.jpg
+
+# case-insensitive globbing
+# more on globbing:
+# https://www.linuxjournal.com/content/bash-extended-globbing
+
+# for zsh
+unsetopt CASE_GLOB  # make * case insensitive
+# example usecase
+ls *dump* # matches dump, Dump, DUMP, DuMp
+
+setopt extendedglob # extended globbing 
+# example usecase
+ls (#1)*dump* # matches dump, Dump, DUMP, DuMp
