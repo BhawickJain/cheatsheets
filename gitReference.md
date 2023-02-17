@@ -49,7 +49,7 @@ git git push -u origin master
 
 ```bash
 git branch [name]
-git branch -a                     # list all branches
+git branch -a                     # list all branches (inc. remotes)
 git branch                        # list all branches
 git push -u origin [name]         # push branch to repo
 git switch [name]
