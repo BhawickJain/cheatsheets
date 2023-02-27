@@ -19,6 +19,8 @@ ls -l                                  # list files in long format
 ls <regex-pattern>                     # list files match pattern
 ls -1laho                              # one line, human readable
 ls -lap1                               # one line, mark directories
+ls -d $PWD/*						   # list all files with the filepath 
+ls -dR $PWD/* | grep -i "pattern"      # find file name pattern with filepath
 
 # grep
 grep -i "case insensitive sEaRCH"
