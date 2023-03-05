@@ -92,12 +92,16 @@ u # for all lowercase
 
 # Spell Check
 ```vim
-]s # next spelling mistake
-[s # previous spelling mistake
-z= # suggest correct spelling
-zg # set as good spelling
-zw # set as wrong spelling
+]s           # next spelling mistake
+[s           # previous spelling mistake
+z=           # suggest correct spelling
+zg           # set as good spelling
+zw           # set as wrong spelling
+:set spell   # turn on spell check
+:set nospell # turn off spell check
+```
 
+```vim
 .vimrc
 set spell spelllang=en_us # language in .vimrc
 ```
