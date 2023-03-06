@@ -92,18 +92,18 @@ u # for all lowercase
 
 # Spell Check
 ```vim
-]s           # next spelling mistake
-[s           # previous spelling mistake
-z=           # suggest correct spelling
-zg           # set as good spelling
-zw           # set as wrong spelling
-:set spell   # turn on spell check
-:set nospell # turn off spell check
+]s           " next spelling mistake
+[s           " previous spelling mistake
+z=           " suggest correct spelling
+zg           " set as good spelling
+zw           " set as wrong spelling
+:set spell   " turn on spell check
+:set nospell " turn off spell check
 ```
 
 ```vim
 .vimrc
-set spell spelllang=en_us # language in .vimrc
+set spell spelllang=en_us " language in .vimrc
 ```
 
 # Plug
@@ -113,4 +113,13 @@ set spell spelllang=en_us # language in .vimrc
 
 " delete / comment out plugs in vimrc or init.vim
 :PlugClean
+```
+
+# macros
+```vim
+q            " to start listening for a macro shortcut
+w            " or any key, macro now recording on w key
+q            " to stop recording
+@w           " or any key recorded, to run the moves
+@@           " to repeat last macro
 ```
