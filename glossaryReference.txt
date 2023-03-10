@@ -53,4 +53,6 @@ duck typing : object is considered valid if property access is valid, regardless
 type inference : by means a language evaluates the type of an expression
 union : properties that are common
 garbage collector : a process that frees memory marked as no longer needed
+polish notation: the operator preceeds the arguments (e.g. +22 <=> 2+2)
+hungarian notation: variable / function name contains its kind or type
 
