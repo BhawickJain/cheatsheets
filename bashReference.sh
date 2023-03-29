@@ -70,3 +70,9 @@ ls *dump* # matches dump, Dump, DUMP, DuMp
 setopt extendedglob # extended globbing 
 # example usecase
 ls (#1)*dump* # matches dump, Dump, DUMP, DuMp
+
+## check if directory is represent
+## does not work for symbolic links
+if [ ! -d "$DIRECTORY" ]; then
+  echo "$DIRECTORY does not exist."
+fi
