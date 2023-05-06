@@ -1,3 +1,6 @@
+## kill a process
+killall code                           # kill all processes of VSCode
+
 ## wc                                  # perform word count
 ls * | wc -l                           # count number of files
 echo 'hello' | pbcopy                  # copy
