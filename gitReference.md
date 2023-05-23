@@ -21,7 +21,7 @@ git log --graph --color | less -r # less with color output
 Remove all untracked and ignored files, exclude `.env` file
 ```bash
 git clean -fxdne ".env"           # dry run
-git clean -fxdne ".env"           # perform action
+git clean -fxde ".env"            # perform action
 
 # only remove ignored files and directories
 # note capital X flag
