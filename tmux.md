@@ -12,9 +12,11 @@ ctrl+b d                        -- detach window
 ctrl+b [                        -- enter copy mode
 ctrl+b q                        -- view pane numbers
 ctrl+b q [0-9]                  -- select pane by number
-```
 
-```
+tmux kill-session <number>      -- kill a problem session
+
 other notes
 
 - to close windows in the list window view, press the 'x' key and confirm (y)
+```
+
