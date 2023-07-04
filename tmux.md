@@ -15,6 +15,8 @@ ctrl+b q [0-9]                  -- select pane by number
 
 tmux kill-session <number>      -- kill a problem session
 
+ctrl+b z                        -- toggle zoom pane to full-screen
+
 other notes
 
 - to close windows in the list window view, press the 'x' key and confirm (y)
