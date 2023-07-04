@@ -79,3 +79,10 @@ ls (#1)*dump* # matches dump, Dump, DUMP, DuMp
 if [ ! -d "$DIRECTORY" ]; then
   echo "$DIRECTORY does not exist."
 fi
+
+## what linux distro
+cat /etc/*-release
+cat /proc/version
+cat uname -a
+cat /etc/issue
+
