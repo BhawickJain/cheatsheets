@@ -86,3 +86,19 @@ cat /proc/version
 cat uname -a
 cat /etc/issue
 
+
+## colors in bash ANSI
+# Check RGB colors available
+echo -e "$COLORTERM" # ok if 'truecolor' or '24bit'
+# RGB colors
+echo -e '\e[48;2;200;100;50mHello\e[0m'
+echo -e '\e[48;2;200;50;100mHello\e[0m'
+echo -e '\e[48;2;0;175;173mDLR\e[0m'
+echo -e '\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[5m\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[3m\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[6m\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[7m\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[1m\e[48;2;0;175;173m DLR \e[0m'
+echo -e '\e[38;2;0;221;120m $ \e[0m'
+
