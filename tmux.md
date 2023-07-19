@@ -1,17 +1,20 @@
 ```
-ctrl+b                          -- command mode
-ctrl+b c                        -- new window
-ctrl+b x                        -- close pane / window
-ctrl+b alt+UP/DOWN/LEFT/RIGHT   -- resize window
-ctrl+b :resize-pane -D 10       -- resize window (D down 10 characters) using tmux command input
-ctrl+b %                        -- split vertically
-ctrl+b "                        -- split horizontally
-ctrl+b ,                        -- rename window
-ctrl+b w                        -- list windows
-ctrl+b d                        -- detach window
-ctrl+b [                        -- enter copy mode
-ctrl+b q                        -- view pane numbers
-ctrl+b q [0-9]                  -- select pane by number
+ctrl+b                          -- <prefix> <some-cmd-below>
+
+<prefix> c                        -- new window
+<prefix> x                        -- close pane / window
+<prefix> alt+UP/DOWN/LEFT/RIGHT   -- resize window
+<prefix> :resize-pane -D 10       -- resize window (D down 10 characters) using tmux command input
+<prefix> %                        -- split vertically
+<prefix> "                        -- split horizontally
+<prefix> ,                        -- rename window
+<prefix> w                        -- list windows
+<prefix> d                        -- detach window
+<prefix> [                        -- enter copy mode
+<prefix> q                        -- view pane numbers
+<prefix> q [0-9]                  -- select pane by number
+<prefix> '                        -- select window by index number
+<prefix> l                        -- jump to last window
 
 tmux kill-session <number>      -- kill a problem session
 
