@@ -1,23 +1,43 @@
 # vim
 
+```vim 
 vim --version
 
 f,[char] takes cursor to the next [char]
 shift+f,[char], takes to the last [char]
+```
+## highlight column number
 
-# highlight column number
+```vim 
 set colorcolum=72
 set colorcolum& #unset
+```
 
-# fold
+## fold
 
-zM # fold everything recursively
-zm # fold everything recursively
-zO # fold open everything recursively
-zo # fold open current block
-zA # fold entire block currenty in
-za # fold toggle block
 
+```vim
+" .vimrc
+let g:markdown_folding = 1
+
+" init.lua
+vim.opt.markdown_folding = 1
+
+" usage
+zo	# open current fold
+zO	# recursively open current fold
+zc	# close current fold
+zC	# recursively close current fold
+za	# toggle current fold
+zA	# recursively open/close current fold
+zm	# reduce foldlevel by one
+zM	# close all folds
+zr	# increase foldlevel by one
+zR	# open all folds
+
+```
+
+```vim
 # substitute
 
 :[range]s/[regex-match]/[substitute]/[options]
@@ -90,7 +110,9 @@ u # for all lowercase
 # in normal and visual mode
 ~ # to switch case of character
 
-# Spell Check
+```
+
+## Spell Check
 ```vim
 ]s           " next spelling mistake
 [s           " previous spelling mistake
