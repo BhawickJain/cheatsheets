@@ -12,9 +12,9 @@ shift+f,[char], takes to the last [char]
 
 ```vim 
 set colorcolum=72
-set colorcolum& #unset
+set colorcolum& "unset
 
--- modern way
+"modern way
 set cc=80
 set cc=
 ```
@@ -24,8 +24,8 @@ set cc=
 very useful when creating text tables or coding changes
 
 ```vim
-set ve=all -- turn on virtual editing
-set ve=    -- unset virtiaul editing
+set ve=all " turn on virtual editing
+set ve=    " unset virtiaul editing
 ```
 
 
@@ -39,91 +39,108 @@ let g:markdown_folding = 1
 vim.opt.markdown_folding = 1
 
 " usage
-zo	# open current fold
-zO	# recursively open current fold
-zc	# close current fold
-zC	# recursively close current fold
-za	# toggle current fold
-zA	# recursively open/close current fold
-zm	# reduce foldlevel by one
-zM	# close all folds
-zr	# increase foldlevel by one
-zR	# open all folds
+zo	" open current fold
+zO	" recursively open current fold
+zc	" close current fold
+zC	" recursively close current fold
+za	" toggle current fold
+zA	" recursively open/close current fold
+zm	" reduce foldlevel by one
+zM	" close all folds
+zr	" increase foldlevel by one
+zR	" open all folds
+
+```
+
+## substitute
+
+```vim
+
+:[range]s/[regex-match]/[substitute]/[options]
+
+" subsitute globally along line
+:s/foo/bar/g
+
+" substitute first occurance
+:s/foo/bar
+
+" substitute line number 5-10 on all lines
+:5,10s/foo/bar/g
+
+" substitute line number 5-EOF on all lines
+:5,$s/foo/bar/g
+
+" substite across the files
+:%s/food/bar/g
+
+" substitute across line but ask confirmation for each
+:s/foo/bar/gc
+
+" move cursor to another split screen
+ctrl+w " then [hjkl] to move left-bottom-up-or-right
+
+```
+
+## window split
+
+```vim
+" split
+:split
+:vsplit (vertical split)
+
+" split resize
+" starting with the window you want to resize
+[number] ctrl+w [-+] " to move by number of pixels
+ctrl+w = " to equal the window sizes:w
+
+" vsplit resize
+[number] ctrl+w [<>] "
 
 ```
 
 ```vim
-# substitute
 
-:[range]s/[regex-match]/[substitute]/[options]
-
-# subsitute globally along line
-:s/foo/bar/g
-
-# substitute first occurance
-:s/foo/bar
-
-# substitute line number 5-10 on all lines
-:5,10s/foo/bar/g
-
-# substitute line number 5-EOF on all lines
-:5,$s/foo/bar/g
-
-# substite across the files
-:%s/food/bar/g
-
-# substitute across line but ask confirmation for each
-:s/foo/bar/gc
-
-# move cursor to another split screen
-ctrl+w then [hjkl] to move left-bottom-up-or-right
-
-# split
-:split
-:vsplit (vertical split)
-
-# split resize
-# starting with the window you want to resize
-[number] ctrl+w [-+] # to move by number of pixels
-ctrl+w = # to equal the window sizes:w
-
-# vsplit resize
-[number] ctrl+w [<>] #
-
-# find next char
+" find next char
 f [char]
 
-# find previous char
+" find previous char
 shift+f [char]
 
-# move to the next find
-# useful for moving across sentences
-# after you used f[char]
+" move to the next find
+" useful for moving across sentences
+" after you used f[char]
 ;
 
-# search
-/\c[regex-pattern]  # case insensitive search
-/\C[regex-pattern]  # case sensitive search
-:set ic             # set search case insensitive
-:set noic           # set search case sensitive
-:set ic!            # toggle case-sensitive search
-?                   # trigger search
-/                   # trigger search
+```
 
-# search to next word currently under cursor
+## search
+
+```vim
+/\c[regex-pattern]  " case insensitive search
+/\C[regex-pattern]  " case sensitive search
+:set ic             " set search case insensitive
+:set noic           " set search case sensitive
+:set ic!            " toggle case-sensitive search
+?                   " trigger search
+/                   " trigger search
+
+" search to next word currently under cursor
 *
 
-# search to previous word currently under cursor
+" search to previous word currently under cursor
 
-# change case
+```
 
-# in visual mode
-# select text
-U # for all UPPERCASE
-u # for all lowercase
+## change case
 
-# in normal and visual mode
-~ # to switch case of character
+```vim
+" in visual mode
+" select text
+U " for all UPPERCASE
+u " for all lowercase
+
+" in normal and visual mode
+~ " to switch case of character
 
 ```
 
@@ -143,7 +160,7 @@ zw           " set as wrong spelling
 set spell spelllang=en_us " language in .vimrc
 ```
 
-# Plug
+## Plug
 ```vim
 " with vim open
 :PlugInstall
@@ -152,7 +169,7 @@ set spell spelllang=en_us " language in .vimrc
 :PlugClean
 ```
 
-# macros
+## macros
 ```vim
 q            " to start listening for a macro shortcut
 w            " or any key, macro now recording on w key
