@@ -6,15 +6,30 @@ vim --version
 f,[char] takes cursor to the next [char]
 shift+f,[char], takes to the last [char]
 ```
+
+
 ## highlight column number
 
 ```vim 
 set colorcolum=72
 set colorcolum& #unset
+
+-- modern way
+set cc=80
+set cc=
 ```
 
-## fold
+## virtual editing
 
+very useful when creating text tables or coding changes
+
+```vim
+set ve=all -- turn on virtual editing
+set ve=    -- unset virtiaul editing
+```
+
+
+## fold
 
 ```vim
 " .vimrc
