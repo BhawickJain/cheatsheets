@@ -7,6 +7,22 @@ f,[char] takes cursor to the next [char]
 shift+f,[char], takes to the last [char]
 ```
 
+## hard wrap text
+
+```vim
+set tw=79
+
+" select some text in visual mode
+gq       " format paragraph
+
+" place cursor on paragraph
+gqq      " wrap current line
+gqap     " wrap this paragraph
+gq}      " wrap this paragraph until blank line
+
+
+```
+
 
 ## highlight column number
 
