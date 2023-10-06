@@ -23,6 +23,15 @@ Remove all untracked and ignored files, exclude `.env` file
 git clean -fxdne ".env"           # dry run
 git clean -fxde ".env"            # perform action
 
+## stash
+
+```bash
+git stash --include-untracked     # stash untracked files as well
+git stash list                    # show stashes
+git stash save <name>             # stash with name
+git stash -S save <name>          # stash staged files with name
+git pop [number]                  # pop latest or some Nth one
+```
 # only remove ignored files and directories
 # note capital X flag
 git clean -fXdne ".env"
