@@ -112,6 +112,9 @@ ctrl+w = " to equal the window sizes:w
 " vsplit resize
 [number] ctrl+w [<>] "
 
+" move between panes
+ctrl+w [hjkl, <arrow-keys>, ctrl+[hjkl]]
+
 ```
 
 ```vim
