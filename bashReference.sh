@@ -1,5 +1,12 @@
-## kill a process
+## managing processes
+echo $!                                # pid of your last command
+<some-process> & echo '$!' > <path>    # pattern to save pid at exec
+kill -9 <PID>                          # kill a particular process
+                                       # make sure you own that process
 killall code                           # kill all processes of VSCode
+
+## managing ports                      
+lsof -i:<PORT>                         # find a process using a port
 
 ## wc                                  # perform word count
 ls * | wc -l                           # count number of files
