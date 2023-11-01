@@ -1,3 +1,5 @@
+echo $0                                # what shell am i using?
+
 ## managing processes
 echo $!                                # pid of your last command
 <some-process> & echo '$!' > <path>    # pattern to save pid at exec
