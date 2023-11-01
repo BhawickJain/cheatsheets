@@ -12,6 +12,8 @@ g pp                              # pull and push into respository
 ## reading logs
 ```bash
 git log
+git show                          # not log, verbose diff of last commit
+git log --stat                    # pathnames and diff statistics
 git log --oneline                 # useful for | grep
 git log --graph                   # fancy visual
 git log --graph --color | less -r # less with color output
