@@ -17,29 +17,53 @@ const arr = [1, 2, 3]
 for (const idx in arr) {
   console.log(idx)
 }
-> 0
-> 1
-> 2
+// > 0
+// > 1
+// > 2
 
 for (const idx in arr) {
   console.log(typeof idx)
 }
-> string
-> string
-> string
+// > string
+// > string
+// > string
 
 // unless you use .forEach
 
 arr.forEach((_, idx) => console.log(idx))
-> 0
-> 1
-> 2
+// > 0
+// > 1
+// > 2
 
 arr.forEach((_, idx) => console.log(typeof idx))
-> number
-> number
-> number
+// > number
+// > number
+// > number
 
+// ES6 provides a .entries method to Arrays
+// this avoids needing c-like for loop
+for (const [i, obj] of arr.entries()) {
+    console.log(i, obj)
+}
+// > 0
+// > 1
+// > 2
+
+for (const [i, obj] of arr.entries()) {
+    console.log(typeof i, obj)
+}
+// > number
+// > number
+// > number
+
+// c-like for loop for completeness
+for (let i=0; i < arr.length; i++) {
+    console.log(i, arr[i])
+}
+
+for (let i=0; i < arr.length; i++) {
+    console.log(typeof i, arr[i])
+}
 ```
 
 ## declarations
