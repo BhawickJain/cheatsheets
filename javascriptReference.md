@@ -7,6 +7,41 @@
 `String.prototype.slice`
 `String.prototype.repeat`
 
+## object keys
+
+Property accessors are always of string type [ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#bracket_notation)
+```javaScript
+// when iterating through keys, those keys are always string
+
+const arr = [1, 2, 3]
+for (const idx in arr) {
+  console.log(idx)
+}
+> 0
+> 1
+> 2
+
+for (const idx in arr) {
+  console.log(typeof idx)
+}
+> string
+> string
+> string
+
+// unless you use .forEach
+
+arr.forEach((_, idx) => console.log(idx))
+> 0
+> 1
+> 2
+
+arr.forEach((_, idx) => console.log(typeof idx))
+> number
+> number
+> number
+
+```
+
 ## declarations
 
 All code, even the main code is wrapped in an imaginary function. `var` declarations at initialised when its parent function is called. Their names are instantiated without running the expressions and before the function is run. `let` and `const` declarations are instantiated at the parent block -- the indentaed or `{}` scoped code.
