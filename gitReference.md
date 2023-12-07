@@ -9,6 +9,12 @@ g c "{message}"                   # give commit with message
 g pp                              # pull and push into respository
 ```
 
+## delete a wrongly commit file type
+```bash
+# remove from git index
+git ls-files '*.pdf' | xargs git rm --cached
+```
+
 ## reading logs
 ```bash
 git log
