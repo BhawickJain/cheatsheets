@@ -6,7 +6,7 @@
 g s                               # get status
 g a .                             # add all items (usually one)
 g c "{message}"                   # give commit with message
-g pp                              # pull and push into respository
+g pp                              # pull and push into repository
 ```
 
 ## delete a wrongly commit file type
