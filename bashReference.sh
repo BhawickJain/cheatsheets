@@ -1,5 +1,9 @@
 echo $0                                # what shell am i using?
 
+## IP addresses
+ipconfig getifaddr en0                 # for macOS, default local wireless
+hostname -I                            # for debian/raspberryOS
+
 ## managing processes
 echo $!                                # pid of your last command
 <some-process> & echo '$!' > <path>    # pattern to save pid at exec
