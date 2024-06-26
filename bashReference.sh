@@ -115,3 +115,10 @@ echo -e '\e[7m\e[48;2;0;175;173m DLR \e[0m'
 echo -e '\e[1m\e[48;2;0;175;173m DLR \e[0m'
 echo -e '\e[38;2;0;221;120m $ \e[0m'
 
+
+# tar
+# -- useful for code that needs file metadata and permission preservations
+# zip
+tar -czvf LotsOfFiles.tgz LotsOfFiles
+# extract
+tar -xvf LotsOfFiles.tgz
